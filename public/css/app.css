@@ -1,0 +1,35 @@
+body{
+    background:#f5f8fa;
+    overflow-x:hidden;
+}
+.m50{
+    margin-top:50px;
+}
+.no-padd{
+    padding:0 !important;
+}
+.no-margin{
+    margin:0 !important;
+}
+.navbar{
+    background: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+.navbar .dropdown-menu{
+    left:auto !important;
+    right:0 !important;
+}
+
+.card-block{
+    padding:20px;
+}
+.cf{
+    padding:0;
+}
+.cf button{
+    width: 100%;
+    padding: 11px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 20px;
+}
