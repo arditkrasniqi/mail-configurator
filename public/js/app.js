@@ -45,13 +45,15 @@
                         email: email,
                         password: password
                     },
-                    success:function(){
-                        window.location.reload();
-                        return;
+                    success:function(data){
+                        if(data == 200){
+                            window.location.reload();
+                        }else{
+                            self.$loginForm.find('.error').text('Wrong email/password');
+                        }
                     },
                     error: function(a,b){
                         window.location.reload();
-                        return;
 
                     }
                 });
@@ -60,7 +62,7 @@
                 $.ajax({
                     url:'logout',
                     type:'GET',
-                    success:function(){
+                    success:function(data){
                         window.location.reload();
                     },
                     error: function(a,b){
